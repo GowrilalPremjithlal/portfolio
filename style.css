@@ -107,10 +107,10 @@ nav ul li a:hover{
 #grid{
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    column: gap 30px; ;
+    column-gap:  30px; ;
     margin-top: 40px;
   align-items: center;
-    /* text-align: center; */ */
+    /* text-align: center; */ 
    
 }
 #img1{
@@ -123,9 +123,135 @@ nav ul li a:hover{
     line-height: 1.5;
     text-align: justify;
 }
-/* .abouttext p{
-    text-align: justify;
-} */
+
 .info{
     margin-left: 10px;
 }
+.skill-contents {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap:  30px; ;
+    margin-top: 40px;
+  align-items: center;
+  }
+  
+  .bars {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    margin-top: 20px;
+    margin-left: 50px;
+  }
+  
+  .bar-head,
+  .bar-percent {
+    font-weight: 500;
+    font-size: 20px;
+  }
+  
+  .base-bar {
+    height: 5px;
+    width: 100%;
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+  }
+  
+  .html-bar {
+    background-color: orange;
+    width: 89%;
+  }
+  
+  .css-bar {
+    background-color: orange;
+    width: 69%;
+  }
+  
+  .js-bar {
+    background-color: orange;
+    width: 89%;
+  }
+  
+  .html-bar {
+    background-color: orange;
+    width: 89%;
+  }
+  
+  .icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  .anim {
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+  }
+  
+  .brand {
+    color: black;
+    font-size: 30px;
+  }
+  
+  .anim:hover {
+    background-image: linear-gradient(to bottom, red, yellow);
+    animation: rotate 4s; /* shorthand for animation-name, animation-duration */
+  }
+  
+  @keyframes rotate{
+    0%{
+      transform: rotate(30deg);
+    }
+    20%{
+      transform: rotate(-30deg);
+    }
+    40%{
+      transform: rotate(30deg);
+    }
+    60%{
+      transform: rotate(-30deg);
+    }
+    80%{
+      transform: rotate(30deg);
+    }
+    100%{
+      transform: rotate(-30deg);
+    }
+  }
+  
+  .icon-container div:hover .brand{
+    color: white;
+  }
+  
+  #copy{
+    text-align: center;
+    margin-top: 40px;
+  }
+  
+  .up-arrow{
+    float: right;
+    margin: 0px 30px 30px 0px;
+  }
+  ::-webkit-scrollbar{
+    width: 10px;
+    border-radius: 20px;
+  }
+  ::-webkit-scrollbar-track{
+    background-color: antiquewhite;
+  }
+  ::-webkit-scrollbar-thumb{
+    background-color: orange;
+    border-radius: 20px;
+  }
+  ::-webkit-scrollbar-thumb:hover{
+    background-color:rgb(254, 195, 85) ;
+  }
+  html{
+    scroll-behavior: smooth;
+  }
